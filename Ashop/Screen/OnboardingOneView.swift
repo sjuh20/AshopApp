@@ -9,6 +9,13 @@ import UIKit
 
 class OnboardingOneView: UIView {
     
+    var onClickButtonNavigate: (()-> Void)!
+    
+    func setOnClickButtonNavigation(onClickButtonNavigate: @escaping (()-> Void)) {
+        self.onClickButtonNavigate = onClickButtonNavigate
+    }
+    
+    
     lazy var onboardingShopOneImageView:UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
@@ -94,6 +101,9 @@ class OnboardingOneView: UIView {
     
     @objc func onboardingButtonOneAction(sender: UIButton!) {
         debugPrint("Olá tudo bem")
+        if onClickButtonNavigate != nil {
+            onClickButtonNavigate!()
+        }
     }
     
     private func setUpOnboardingPathOneImageViewConstraints(){

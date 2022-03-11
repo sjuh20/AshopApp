@@ -8,6 +8,12 @@
 import UIKit
 
 class OnboardingTwoView: UIView {
+    
+    var onClickButtonNavigate: (()-> Void)!
+    
+    func setOnClickButtonNavigation(onClickButtonNavigate: @escaping (()-> Void)) {
+        self.onClickButtonNavigate = onClickButtonNavigate
+    }
 
     lazy var onboardingShopTwoImageView:UIImageView = {
         let image = UIImageView()
@@ -91,8 +97,12 @@ class OnboardingTwoView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     @objc func onboardingButtonTwoAction(sender: UIButton!) {
         debugPrint("Olá tudo bem")
+        if onClickButtonNavigate != nil {
+            onClickButtonNavigate!()
+        }
     }
     
     

@@ -36,6 +36,11 @@
 		B97E5DCF27DA836F00EB2AD5 /* OnboardingTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97E5DCE27DA836F00EB2AD5 /* OnboardingTwoViewController.swift */; };
 		B97E5DD127DA89E000EB2AD5 /* OnboardingThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97E5DD027DA89E000EB2AD5 /* OnboardingThreeViewController.swift */; };
 		B97E5DD327DA8A0800EB2AD5 /* OnboardingThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97E5DD227DA8A0800EB2AD5 /* OnboardingThreeView.swift */; };
+		B97E5DD627DA901C00EB2AD5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97E5DD527DA901C00EB2AD5 /* Coordinator.swift */; };
+		B97E5DD827DA90AA00EB2AD5 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97E5DD727DA90AA00EB2AD5 /* MainCoordinator.swift */; };
+		B97E5DDA27DA91CA00EB2AD5 /* OnboardingOneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97E5DD927DA91CA00EB2AD5 /* OnboardingOneCoordinator.swift */; };
+		B97E5DDC27DA937A00EB2AD5 /* OnboardingTwoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97E5DDB27DA937A00EB2AD5 /* OnboardingTwoCoordinator.swift */; };
+		B97E5DDE27DA951500EB2AD5 /* OnboardingThreeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97E5DDD27DA951500EB2AD5 /* OnboardingThreeCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +77,11 @@
 		B97E5DCE27DA836F00EB2AD5 /* OnboardingTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTwoViewController.swift; sourceTree = "<group>"; };
 		B97E5DD027DA89E000EB2AD5 /* OnboardingThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingThreeViewController.swift; sourceTree = "<group>"; };
 		B97E5DD227DA8A0800EB2AD5 /* OnboardingThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingThreeView.swift; sourceTree = "<group>"; };
+		B97E5DD527DA901C00EB2AD5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B97E5DD727DA90AA00EB2AD5 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		B97E5DD927DA91CA00EB2AD5 /* OnboardingOneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingOneCoordinator.swift; sourceTree = "<group>"; };
+		B97E5DDB27DA937A00EB2AD5 /* OnboardingTwoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTwoCoordinator.swift; sourceTree = "<group>"; };
+		B97E5DDD27DA951500EB2AD5 /* OnboardingThreeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingThreeCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +134,7 @@
 		B97E5D8D27DA3B0100EB2AD5 /* Ashop */ = {
 			isa = PBXGroup;
 			children = (
+				B97E5DD427DA8FD600EB2AD5 /* Coordinator */,
 				B97E5DA827DA66B600EB2AD5 /* Fonts */,
 				B97E5DA727DA560800EB2AD5 /* Controller */,
 				B97E5DA227DA3C2000EB2AD5 /* Screen */,
@@ -187,6 +198,18 @@
 				B97E5DBB27DA66EA00EB2AD5 /* Montserrat-ExtraBoldItalic.ttf */,
 			);
 			path = Montserrat;
+			sourceTree = "<group>";
+		};
+		B97E5DD427DA8FD600EB2AD5 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B97E5DD527DA901C00EB2AD5 /* Coordinator.swift */,
+				B97E5DD727DA90AA00EB2AD5 /* MainCoordinator.swift */,
+				B97E5DD927DA91CA00EB2AD5 /* OnboardingOneCoordinator.swift */,
+				B97E5DDB27DA937A00EB2AD5 /* OnboardingTwoCoordinator.swift */,
+				B97E5DDD27DA951500EB2AD5 /* OnboardingThreeCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,11 +329,16 @@
 				B97E5DCF27DA836F00EB2AD5 /* OnboardingTwoViewController.swift in Sources */,
 				B97E5D9327DA3B0100EB2AD5 /* OnboardingOneViewController.swift in Sources */,
 				B97E5DD327DA8A0800EB2AD5 /* OnboardingThreeView.swift in Sources */,
+				B97E5DD827DA90AA00EB2AD5 /* MainCoordinator.swift in Sources */,
 				B97E5D8F27DA3B0100EB2AD5 /* AppDelegate.swift in Sources */,
 				B97E5DA627DA55B900EB2AD5 /* OnboardingTwoView.swift in Sources */,
+				B97E5DDC27DA937A00EB2AD5 /* OnboardingTwoCoordinator.swift in Sources */,
+				B97E5DDA27DA91CA00EB2AD5 /* OnboardingOneCoordinator.swift in Sources */,
+				B97E5DDE27DA951500EB2AD5 /* OnboardingThreeCoordinator.swift in Sources */,
 				B97E5DA427DA53E800EB2AD5 /* OnboardingOneView.swift in Sources */,
 				B97E5DD127DA89E000EB2AD5 /* OnboardingThreeViewController.swift in Sources */,
 				B97E5D9127DA3B0100EB2AD5 /* SceneDelegate.swift in Sources */,
+				B97E5DD627DA901C00EB2AD5 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

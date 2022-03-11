@@ -10,9 +10,16 @@ import UIKit
 class OnboardingTwoViewController: UIViewController {
 
     var onboardingTwoView : OnboardingTwoView?
+    var onClickButtonNavigate: (()-> Void)?
     
     override func loadView() {
         self.onboardingTwoView = OnboardingTwoView()
+        
+        onboardingTwoView?.setOnClickButtonNavigation {
+            let coordinator = OnboardingThreeCoordinator(navigationControler: self.navigationController!)
+            coordinator.start()
+            
+        }
         self.view = self.onboardingTwoView
     }
     
